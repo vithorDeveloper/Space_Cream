@@ -5,7 +5,7 @@
 
 ## Descrição
 
- > Nesse desafio passado pela Rocketseat, tinhamos que coloca em pratica os conhecimentos adquiridos em aula, como display Grid, @keyframes, responsividade ,etc. Então usei os @keyframes e o Grid para animar e manipular as imagens, e o @media para deixa-lo responsivo
+ > Nesse desafio passado pela Rocketseat, tinhamos que coloca em pratica os conhecimentos adquiridos em aula, como display Grid, @keyframes, responsividade , etc. Então usei os @keyframes e o Grid para animar e manipular as imagens, e o @media para deixa-lo responsivo
 
 ## Tecnologias Usadas 
 
