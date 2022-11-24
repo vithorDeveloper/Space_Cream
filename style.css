@@ -1,0 +1,340 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --f-family: 'Signika Negative', sans-serif;
+  --t-transform: uppercase;
+
+  --b-color3: #a194c6;
+  --b-color4: #ffffff;
+
+  --h-color4: #7d64a9;
+
+  --s-color2: #4956a1;
+}
+
+body{
+  font-family: var(--f-family);
+
+  background-color: var(--b-color3);
+
+  overflow: hidden;
+}
+
+header{
+  height: 24.5rem;
+
+  text-align: center;
+
+  padding-top: 3rem;
+  margin-bottom: 2.8rem;
+
+  background-color: var(--h-color4)
+}
+
+header img{
+  width: 13.7rem;
+  height: 13.7rem;
+
+  padding-bottom: 2rem;
+  margin: auto;
+
+  animation-name: logo;
+  animation-duration: 1s;
+}
+
+header h1{
+  padding: 0.5rem;
+
+  background-color: var(--s-color2);
+
+  color: white;
+
+  text-transform: var(--t-transform);
+  font-size: 3rem;
+
+  animation-name: transparencia;
+  animation-duration: 2s;
+}
+
+main{
+  padding: 0 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main p{
+  padding-bottom: 3rem;
+
+  text-align: center;
+  font-size: 2rem;
+
+  color: var(--s-color1);
+
+  animation-name: transparencia;
+  animation-duration: 2s;
+}
+
+main div.pictures{
+  text-align: center;
+}
+
+main img{
+  transition-duration: 400ms;
+}
+
+div.imgDesktop{
+  display: none;
+}
+
+main img:hover{
+  transform:scale(1.1);
+  filter: saturate(2);
+}
+
+.pictures div:nth-child(1),
+.pictures div:nth-child(3),
+.pictures div:nth-child(5){
+  animation-name: imagensAC;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.pictures div:nth-child(2),
+.pictures div:nth-child(4),
+.pictures div:nth-child(6){
+  animation-name: imagensBD;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+main div{
+  position:relative;
+  display: inline-block;
+
+  margin-bottom: 3rem;
+}
+
+main span{
+  color: var(--b-color4);
+  background-color: var(--h-color4);
+
+  font-size: 2rem;
+  text-transform: var(--t-transform);
+
+  padding: 0.5rem 2rem;
+
+  border-radius: 2rem;
+
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  animation-name: imagensAC;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+footer{
+  display: none;
+  height: 10rem;
+  color: #4A4E69;
+  font-size: 1.8rem;
+}
+
+@keyframes logo{
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes transparencia{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes imagensAC{
+  0%{
+    transform: translatex(-50px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+@keyframes imagensBD{
+  0%{
+    transform: translatex(50px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 702px){
+  main div.pictures{
+    display: grid;
+    grid-template-areas: 
+    "A B"                         
+    "D B"
+    "D C"; 
+
+    grid-gap: 3rem;
+  }
+
+  main div:nth-child(1){
+    grid-area: A;
+  }
+
+  main div:nth-child(2){
+    grid-area: B;
+  }
+
+  main div:nth-child(3){
+    grid-area: C;
+  }
+
+  main div:nth-child(4){
+    grid-area: D;
+  }
+}
+
+@media (min-width: 1200px){
+  div.page{
+    display: flex;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 70rem;
+    height: 100vh;
+    
+    margin-bottom: 0;
+  }
+
+  header img{
+    width: 15.7rem;
+    height: 15.7rem;
+  
+    padding: 0;
+    margin: 5rem 0 5rem; 
+  }
+
+  header h1{
+    width: 100%;
+
+    font-size: 4.8rem;
+
+    margin-bottom: 5rem;
+  }
+
+  header::after{
+    content: "lorem Lorem ipsum dolor sit amet, coLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem. nsectetur adipiscing elit, Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus.Aliquam erat volutpat. Praesent at quam aliquet ";
+    
+    font-size: 2.4rem;
+
+    padding: 0 4rem 0;
+
+    min-width: 35rem;
+
+    animation-name: transparencia;
+    animation-duration: 2s;
+
+    color: rgb(50, 42, 58);
+  }
+  
+  main p{
+    display: none;
+  }
+
+  main div.imgDesktop{
+    display: inline-block;
+  }
+
+  main{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    margin-left: 10rem;
+  }
+
+  main div.pictures{
+    display: grid;
+    grid-template-areas: 
+    "A B C"                         
+    "D B F"                         
+    "D E F"
+    "G G G";
+
+    grid-gap: 3rem;
+  }
+
+  main div:nth-child(1){
+    grid-area: A;
+  }
+
+  main div:nth-child(2){
+    grid-area: B;
+  }
+
+  main div:nth-child(3){
+    grid-area: C;
+  }
+
+  main div:nth-child(4){
+    grid-area: D;
+  }
+
+  main div:nth-child(5){
+    grid-area: E;
+  }
+
+  main div:nth-child(6){
+    grid-area: F;
+  }
+
+  main div:nth-child(7){
+    grid-area: G;
+  }
+
+  footer{
+    display: block;
+
+    animation-name: transparencia;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+  }
+}
+
+
