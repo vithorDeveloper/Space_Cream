@@ -1,17 +1,18 @@
 
 # Space Cream
 
-![preview](https://user-images.githubusercontent.com/116108525/203674817-b66b73de-925c-43dc-bb3a-3f3b8ef7d1c4.png)
+![preview](https://user-images.githubusercontent.com/116108525/204069690-977c122d-fa79-47af-923a-5399cd946d06.png)
 
-## Descrição
+## Description
 
- > Nesse desafio passado pela Rocketseat, tinhamos que coloca em pratica os conhecimentos adquiridos em aula, como display Grid, @keyframes, responsividade , etc. Então usei os @keyframes e o Grid para animar e manipular as imagens, e o @media para deixa-lo responsivo
+ > In this challenge given by Rocketseat, we had to put into practice the knowledge acquired in class, such as Grid display, @keyframes, responsiveness, etc. So I used @keyframes and Grid to animate and manipulate the images, and @media to make it responsive
 
-## Tecnologias Usadas 
+## Technologies Used 
 
 * HTML
 * CSS
-## Abrir Projeto
+
+## Open Project
 
 [Space Cream](https://space-cream-lyart.vercel.app)
 
